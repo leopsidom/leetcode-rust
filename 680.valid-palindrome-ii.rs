@@ -24,7 +24,6 @@ impl Solution {
     }
 
     pub fn is_palindrome(chars: &[char]) -> bool {
-        // let chars = s.chars().collect::<Vec<char>>();
         let N = chars.len();
 
         if N <= 1 { return true; }

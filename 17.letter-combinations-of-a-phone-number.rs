@@ -12,6 +12,7 @@ impl Solution {
         if digits.len() == 0 {
             return vec![];
         }
+        
         let mut ans = vec!["".to_string()];
         let map: HashMap<char, Vec<char>> = [
             ('2', vec!['a', 'b', 'c']),

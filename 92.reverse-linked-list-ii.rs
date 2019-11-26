@@ -81,7 +81,6 @@ impl Solution {
         }
 
         prev
-        
     }
 }
 // @lc code=end

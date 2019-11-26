@@ -23,8 +23,7 @@ impl Solution {
             grid: &Vec<Vec<i32>>
         ) {
             seen.insert(coord);
-            // println!("{:?}", coord);
-            // *n_nodes += 1;
+
             let (x, y) = coord;
 
             let mut neis = vec![];
@@ -45,7 +44,6 @@ impl Solution {
             } else { *ans += 1; }
 
             for (i, j) in neis {
-                // println!("seen {:?} contains {:?}? {}", seen, (i, j), seen.contains(&(i, j)));
                 if grid[i][j] == 1 {
                     if !seen.contains(&(i, j)) {
                         dfs((i, j), seen, R, C, ans, grid);
@@ -66,7 +64,6 @@ impl Solution {
             }
         }
 
-        // println!("{}, {}", n_nodes, n_edges);
         ans as i32
     }
 }

@@ -42,9 +42,7 @@ impl Solution {
                         let tree_node = Rc::new(RefCell::new(TreeNode::new(i)));
                         tree_node.borrow_mut().left = left.clone();
                         tree_node.borrow_mut().right = right.clone();
-                        // if let Some(node) = right.clone() {
-                        //     println!("i: {}, right: {}", i, node.borrow().val);
-                        // }
+
                         ans.push(Some(tree_node));
                     }
                 }
